@@ -6,7 +6,7 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform _playerSpawn;
 	[SerializeField] private GameObject _hero;
-	[SerializeField] private Transform _camera;
+	private Transform _camera;
 	public bool DoorRight = false;
 	public bool DoorLeft = false;
 	public bool DoorUp = false;
@@ -16,7 +16,8 @@ public class Door : MonoBehaviour
 	public void Awake()
 	{
 		_camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
-	}
+
+    }
 	
 	public void OnTriggerEnter(Collider other)
 	{
@@ -24,26 +25,27 @@ public class Door : MonoBehaviour
 		{
 			Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
-		}
+			Destroy(other.gameObject);
+        }
 	}
 	
 	private void CameraMove()
 	{
 		if (DoorRight)
 		{
-			_camera.position = new Vector3(0,0,0);
+			_camera.position = new Vector3(_camera.position.x + 60,_camera.position.y,_camera.position.z);
 		}
 		else if (DoorLeft)
 		{
-			_camera.position = new Vector3(0,0,0);
-		}
+            _camera.position = new Vector3(_camera.position.x - 60, _camera.position.y, _camera.position.z);
+        }
 		else if (DoorUp)
 		{
-			_camera.position = new Vector3(0,0,0);
+            _camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z + 32.5f); 
 		}
 		else if (DoorDown)
 		{
-			_camera.position = new Vector3(0,0,0);
-		};
+            _camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z - 32.5f);
+        };
 	}
 }
