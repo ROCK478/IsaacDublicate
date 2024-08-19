@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
 	public bool DoorLeft = false;
 	public bool DoorUp = false;
 	public bool DoorDown = false;
-	public bool IsLocked = false;
+	public bool IsOpen = true;
 	
 	public void Awake()
 	{
@@ -21,7 +21,7 @@ public class Door : MonoBehaviour
 	
 	public void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Player")
+		if (other.tag == "Player" && IsOpen)
 		{
 			Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
@@ -30,22 +30,22 @@ public class Door : MonoBehaviour
 	}
 	
 	private void CameraMove()
-	{
+	{	
 		if (DoorRight)
 		{
-			_camera.position = new Vector3(_camera.position.x + 60,_camera.position.y,_camera.position.z);
+			_camera.position = new Vector3(_camera.position.x + 60, _camera.position.y, _camera.position.z);
 		}
 		else if (DoorLeft)
 		{
-            _camera.position = new Vector3(_camera.position.x - 60, _camera.position.y, _camera.position.z);
-        }
+			_camera.position = new Vector3(_camera.position.x - 60, _camera.position.y, _camera.position.z);
+		}
 		else if (DoorUp)
 		{
-            _camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z + 32.5f); 
+			_camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z + 32.5f);
 		}
 		else if (DoorDown)
 		{
-            _camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z - 32.5f);
-        };
+			_camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z - 32.5f);
+		};
 	}
 }
