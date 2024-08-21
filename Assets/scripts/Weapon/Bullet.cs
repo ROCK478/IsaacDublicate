@@ -7,6 +7,10 @@ public class Bullet : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject);
+        if (collision.gameObject.name == "Wall")
+        {
+            Destroy(this.gameObject);
+        }
+        
     }
 }
