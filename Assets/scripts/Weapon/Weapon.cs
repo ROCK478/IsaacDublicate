@@ -9,10 +9,10 @@ public class Weapon : MonoBehaviour
     public GameObject BulletPrephab;
     public Transform FirePoint;
     public LayerMask GroundLayer;
+    public static bool Pistol = true;
+    public static bool Rifle = false;
+    public static bool Shootgun = false;
 
-    private void Awake()
-    {
-    }
 
     public void Shoot()
     {

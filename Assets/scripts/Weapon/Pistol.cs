@@ -8,6 +8,7 @@ public class Pistol : Weapon
     {
         bulletSpeed = 20f;
         mainCamera = Camera.main;
+        FirePoint = GameObject.Find("FirePointPistol").transform;
     }
 
     private void Update()

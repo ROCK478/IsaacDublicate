@@ -3,7 +3,10 @@ guid: dca9b219d73f1c64aa5309ef2782656a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mainCamera: {instanceID: 0}
+  - BulletPrephab: {fileID: 1812883584786598972, guid: 777e3488842d29c408238bf3b3b643f9, type: 3}
+  - FirePoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
