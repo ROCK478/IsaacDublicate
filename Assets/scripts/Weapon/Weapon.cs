@@ -11,7 +11,9 @@ public class Weapon : MonoBehaviour
     public GameObject BulletPrephab;
     [NonSerialized] public Transform FirePoint;
     public LayerMask GroundLayer;
-    [NonSerialized] public static GameObject CurrentWeapon;
+    [NonSerialized] public static bool IsPistol = true;
+    [NonSerialized] public static bool IsRifle = false;
+    [NonSerialized] public static bool IsShootgun = false;
     //Таймер для нормальной стрельбы
     [NonSerialized] public bool Fire = true;
     [Range(0f, 10f)] public float TimerDuration;

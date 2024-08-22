@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 8476778756695859530}
   - component: {fileID: 7716549661443887567}
   - component: {fileID: 2253584529066442979}
+  - component: {fileID: 6851102811260486203}
   m_Layer: 0
   m_Name: hero
   m_TagString: Player
@@ -355,3 +356,17 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+--- !u!114 &6851102811260486203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087577552444688564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992b71ff9a2098e4180cd4ab57f9b491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _riflePrephab: {fileID: 7909938446391772805, guid: 7868b1b037cc08c47b4669ae4a07f834, type: 3}
+  _shootgunPrephab: {fileID: 6395762827275596629, guid: 0ce02e402a047444992e4d8a225b7cbb, type: 3}

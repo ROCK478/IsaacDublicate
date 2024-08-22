@@ -7,7 +7,6 @@ public class Shootgun : Weapon
 {
     [SerializeField]private int _pellets = 8;
     [SerializeField]private float _spreadAngle = 0f;
-    public static bool IsShootgun = false;
     public static float TimeLifeBullet = 0.5f;
     private void Awake()
     {
@@ -18,7 +17,8 @@ public class Shootgun : Weapon
 
     private void Start()
     {
-        CurrentWeapon = this.gameObject;
+        IsPistol = false;
+        IsRifle = false;
         IsShootgun = true;
     }
 

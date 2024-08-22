@@ -12,6 +12,7 @@ public class Door : MonoBehaviour
 	public bool DoorUp = false;
 	public bool DoorDown = false;
 	public bool IsOpen = true;
+	public static bool NewHeroCreate = false;
 	
 	public void Awake()
 	{
@@ -26,6 +27,10 @@ public class Door : MonoBehaviour
 			Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
 			Destroy(other.gameObject);
+			if (Weapon.IsPistol == false)
+			{
+                NewHeroCreate = true;
+            }
         }
 	}
 	

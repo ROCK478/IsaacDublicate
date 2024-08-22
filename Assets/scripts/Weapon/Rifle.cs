@@ -13,8 +13,9 @@ public class Rifle : Weapon
 
     private void Start()
     {
-        CurrentWeapon = this.gameObject;
-        Shootgun.IsShootgun = false;
+        IsPistol = false;
+        IsRifle = true;
+        IsShootgun = false;
     }
 
     private void FixedUpdate()
