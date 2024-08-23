@@ -6,8 +6,6 @@ public class Rifle : Weapon
 {
     private void Awake()
     {
-        BulletSpeed = 20f;
-        mainCamera = Camera.main;
         FirePoint = GameObject.Find("FirePointRifle").transform;
     }
 

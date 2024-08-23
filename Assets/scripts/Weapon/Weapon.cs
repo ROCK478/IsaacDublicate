@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public class Weapon : MonoBehaviour
 {
-    [NonSerialized] public Camera mainCamera;
-    public float BulletSpeed;
+    [NonSerialized] public static Camera mainCamera;
+    public static float BulletSpeed;
     public GameObject BulletPrephab;
     [NonSerialized] public Transform FirePoint;
     public LayerMask GroundLayer;
@@ -19,7 +19,11 @@ public class Weapon : MonoBehaviour
     [Range(0f, 10f)] public float TimerDuration;
     [NonSerialized] public float TimeForShoot;
 
-
+    private void Start()
+    {
+        BulletSpeed = 20f;
+        mainCamera = Camera.main;
+    }
     public void Shoot()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);

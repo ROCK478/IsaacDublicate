@@ -10,8 +10,6 @@ public class Shootgun : Weapon
     public static float TimeLifeBullet = 0.5f;
     private void Awake()
     {
-        BulletSpeed = 20f;
-        mainCamera = Camera.main;
         FirePoint = GameObject.Find("FirePointShootgun").transform;
     }
 

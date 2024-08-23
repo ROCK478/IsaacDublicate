@@ -132,7 +132,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e925a6fc500270848ae7437222520d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 20
+  BulletSpeed: 0
   BulletPrephab: {fileID: 1812883584786598972, guid: 777e3488842d29c408238bf3b3b643f9, type: 3}
   GroundLayer:
     serializedVersion: 2
