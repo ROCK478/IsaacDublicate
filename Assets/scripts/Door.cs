@@ -13,7 +13,6 @@ public class Door : MonoBehaviour
 	public bool DoorUp = false;
 	public bool DoorDown = false;
 	public bool IsOpen = true;
-	public static bool NewHeroCreate = false;
 	
 	public void Awake()
 	{
@@ -26,17 +25,11 @@ public class Door : MonoBehaviour
 		if (other.tag == "Player" && IsOpen)
 		{
 			other.transform.position = _playerSpawn.position; // Изменение позиции игрока, вместо клонирование экезмпляра
-			//Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
-			//Destroy(other.gameObject);
-			if (Weapon.IsPistol == false)
-			{
-                NewHeroCreate = true;
-            }
         }
 	}
 	
-	private void CameraMove()
+	private void CameraMove() //Изменение положение камеры по сдвигу уровня
 	{	
 		if (DoorRight)
 		{

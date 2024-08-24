@@ -8,11 +8,7 @@ public class Bullet : MonoBehaviour
     public static bool BuffSize = false;
     private void OnCollisionEnter(Collision collision)
     {
-        if (Shootgun.IsShootgun)
-        {
-            Destroy(this.gameObject, Shootgun.TimeLifeBullet);
-        }
-        else if (collision.gameObject.name == "Wall")
+        if (collision.gameObject.name == "Wall")
         {
             Destroy(this.gameObject);
         }
@@ -24,8 +20,6 @@ public class Bullet : MonoBehaviour
         {
             transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
         }
+        Destroy(this.gameObject, Shootgun.TimeLifeBullet);
     }
-
-
-
 }

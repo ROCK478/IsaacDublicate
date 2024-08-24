@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour
+public class PlayerRotation : MonoBehaviour //ѕоворачивает персонажа в сторону курсора мыши
 {
     public Camera mainCamera; 
     public LayerMask groundLayer;
@@ -12,7 +12,7 @@ public class PlayerRotation : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    void Update()
+    void Update() 
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;

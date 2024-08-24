@@ -5,19 +5,12 @@ using UnityEngine;
 
 public class Shootgun : Weapon
 {
-    [SerializeField]private int _pellets = 8;
-    [SerializeField]private float _spreadAngle = 0f;
-    public static float TimeLifeBullet = 0.5f;
+    [SerializeField]private int _pellets; //Задаём в инспекторе сколько патронов за раз стрелять
+    [SerializeField]private float _spreadAngle = 10f; //Угол для изменения
+    public static float TimeLifeBullet = 0.5f; //Задержка
     private void Awake()
     {
         FirePoint = GameObject.Find("FirePointShootgun").transform;
-    }
-
-    private void Start()
-    {
-        IsPistol = false;
-        IsRifle = false;
-        IsShootgun = true;
     }
 
     private void Update()

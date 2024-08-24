@@ -11,10 +11,6 @@ public class Pistol : Weapon
 
     private void Update()
     {
-        if (FirePoint == null)
-        {
-            FirePoint = GameObject.Find("FirePointPistol").transform;
-        }
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();

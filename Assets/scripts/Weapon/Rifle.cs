@@ -8,14 +8,6 @@ public class Rifle : Weapon
     {
         FirePoint = GameObject.Find("FirePointRifle").transform;
     }
-
-    private void Start()
-    {
-        IsPistol = false;
-        IsRifle = true;
-        IsShootgun = false;
-    }
-
     private void FixedUpdate()
     {
         if (Input.GetMouseButton(0) && Fire)

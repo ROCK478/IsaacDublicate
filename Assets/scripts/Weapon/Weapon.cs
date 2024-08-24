@@ -7,17 +7,16 @@ using UnityEngine.UIElements;
 public class Weapon : MonoBehaviour
 {
     [NonSerialized] public static Camera mainCamera;
-    public static float BulletSpeed;
-    public GameObject BulletPrephab;
+    public static float BulletSpeed; // Скорость пули
+    public GameObject BulletPrephab; 
     [NonSerialized] public Transform FirePoint;
     public LayerMask GroundLayer;
-    [NonSerialized] public static bool IsPistol = true;
-    [NonSerialized] public static bool IsRifle = false;
     [NonSerialized] public static bool IsShootgun = false;
     //Таймер для нормальной стрельбы
     [NonSerialized] public bool Fire = true;
-    [Range(0f, 10f)] public float TimerDuration;
+    [Range(0f, 10f)] public float TimerDuration; // Задержка между выстрелами
     [NonSerialized] public float TimeForShoot;
+
 
     private void Start()
     {
@@ -38,7 +37,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public void Timer()
+    public void Timer() // Позволяет стрелять с задержкой
     {
         if (TimeForShoot > 0)
         {

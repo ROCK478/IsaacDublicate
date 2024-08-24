@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class PickUpWeapon : MonoBehaviour
+public class PickUpWeapon : MonoBehaviour //Подбор оружия
 {
     private GameObject _currentWeapon;
     [SerializeField] GameObject _newWeaponPrephab;
@@ -22,7 +22,7 @@ public class PickUpWeapon : MonoBehaviour
         }
     }
 
-    private void ChangeWeapon()
+    private void ChangeWeapon() // Меняет нынешнее оружие на подобранное
     { 
         GameObject _newWeapon = Instantiate(_newWeaponPrephab, _weaponSpawn.transform.position, _weaponSpawn.transform.rotation);
         _newWeapon.transform.SetParent(_hero.transform);

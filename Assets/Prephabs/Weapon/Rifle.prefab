@@ -150,9 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e925a6fc500270848ae7437222520d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpeed: 0
   BulletPrephab: {fileID: 1812883584786598972, guid: 777e3488842d29c408238bf3b3b643f9, type: 3}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 1
-  TimerDuration: 0.05
+  TimerDuration: 0.22
