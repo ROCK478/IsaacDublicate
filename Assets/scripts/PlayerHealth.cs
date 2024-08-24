@@ -17,12 +17,12 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHeath(maxHealth);
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage) // Получение урона
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0) // Рестарт уровни, если здоровье игрока достигает нуля
         {
             Debug.Log("You Lost!!");
             SceneManager.LoadScene("SampleScene");

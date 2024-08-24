@@ -9,9 +9,9 @@ public class ThornDamage : MonoBehaviour
     public PlayerHealth playerHealth;
     int thornDamage = 20;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) // Соприкосновение с шипом 
     {
-        if (collision.gameObject.name.Equals("hero"))
+        if (collision.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(thornDamage);
             Debug.Log("Ouch, Fuck!!!");

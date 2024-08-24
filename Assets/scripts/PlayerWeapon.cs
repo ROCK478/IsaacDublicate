@@ -22,7 +22,7 @@ public class PlayerWeapon : MonoBehaviour
             _weaponSpawn = GameObject.Find("WeaponSpawn");
             GameObject _newWeapon = Instantiate(_riflePrephab, _weaponSpawn.transform.position, _weaponSpawn.transform.rotation);
             _newWeapon.transform.SetParent(GameObject.FindGameObjectWithTag("Player").transform);
-            Destroy(_currentWeapon);
+            //Destroy(_currentWeapon);
             Door.NewHeroCreate = false;
         }
         else if (Weapon.IsShootgun && Door.NewHeroCreate)
@@ -31,7 +31,7 @@ public class PlayerWeapon : MonoBehaviour
             _weaponSpawn = GameObject.Find("WeaponSpawn");
             GameObject _newWeapon = Instantiate(_shootgunPrephab, _weaponSpawn.transform.position, _weaponSpawn.transform.rotation);
             _newWeapon.transform.SetParent(GameObject.FindGameObjectWithTag("Player").transform);
-            Destroy(_currentWeapon);
+            //Destroy(_currentWeapon);
             Door.NewHeroCreate = false;
         }
     }
