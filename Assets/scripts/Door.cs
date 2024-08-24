@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform _playerSpawn;
 	[SerializeField] private GameObject _hero;
+
 	private Transform _camera;
 	public bool DoorRight = false;
 	public bool DoorLeft = false;
@@ -24,9 +25,10 @@ public class Door : MonoBehaviour
 	{
 		if (other.tag == "Player" && IsOpen)
 		{
-			Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
+			other.transform.position = _playerSpawn.position;
+			//Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
-			Destroy(other.gameObject);
+			//Destroy(other.gameObject);
 			if (Weapon.IsPistol == false)
 			{
                 NewHeroCreate = true;
