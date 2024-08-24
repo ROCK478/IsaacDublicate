@@ -25,7 +25,7 @@ public class Door : MonoBehaviour
 	{
 		if (other.tag == "Player" && IsOpen)
 		{
-			other.transform.position = _playerSpawn.position;
+			other.transform.position = _playerSpawn.position; 
 			//Instantiate(_hero, _playerSpawn.position, _playerSpawn.rotation);
 			CameraMove();
 			//Destroy(other.gameObject);

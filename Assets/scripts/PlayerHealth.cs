@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+
     public HealthBar healthBar;
 
     void Start()
@@ -15,17 +17,15 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHeath(maxHealth);
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            TakeDamage(10);
-        }
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Debug.Log("You Lost!!");
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }
