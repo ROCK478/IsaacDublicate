@@ -1,17 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Shootgun : Weapon
 {
-    [SerializeField]private int _pellets; //Задаём в инспекторе сколько патронов за раз стрелять
-    [SerializeField]private float _spreadAngle = 10f; //Угол для изменения
+    private int _pellets = 3; //Задаём в инспекторе сколько патронов за раз стрелять
     public static float TimeLifeBullet = 0.5f; //Задержка
-    private void Awake()
-    {
-        FirePoint = GameObject.Find("FirePointShootgun").transform;
-    }
 
     private void Update()
     {
@@ -23,25 +20,16 @@ public class Shootgun : Weapon
         Timer();
     }
 
-    private void ShootForShootgun()
+    private void ShootForShootgun() // Вычисляет направление от точки спавна пули до нужного направления разброса. После этого пуля получает ускорение в этом направлении.
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        for (int i = 0; i < _pellets; i++)
         {
-            Vector3 targetPoint = hit.point;
-            Vector3 shootDirection = (targetPoint - FirePoint.position).normalized;
-            for (int i = 0; i < _pellets; i++)
-            {
-                Quaternion spreadRotation = Quaternion.Euler(
-                    UnityEngine.Random.Range(-_spreadAngle, _spreadAngle),
-                    UnityEngine.Random.Range(-_spreadAngle, _spreadAngle),
-                    0
-                );
-                GameObject bullet = Instantiate(BulletPrephab, FirePoint.position, Quaternion.LookRotation(spreadRotation * shootDirection));
-                Rigidbody rb = bullet.GetComponent<Rigidbody>();
-                Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-                bulletRb.velocity = shootDirection * BulletSpeed;
-            }
+            FirePoint = GameObject.Find($"FirePointShootgun{i}").transform;
+            Vector3 targetPosition = GameObject.Find($"TargetPosition{i}").transform.position;
+            Vector3 direction = (targetPosition - FirePoint.position).normalized;
+            GameObject bullet = Instantiate(BulletPrephab, FirePoint.position, FirePoint.rotation);
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+            bulletRb.velocity = direction * BulletSpeed;
         }
     }
 }
