@@ -8601,6 +8601,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 84
       objectReference: {fileID: 0}
+    - target: {fileID: 8476778756695859530, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6851102811260486203, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
     - {fileID: 3239931410687622152, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
