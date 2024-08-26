@@ -8,7 +8,7 @@ using UnityEngine;
 public class Shootgun : Weapon
 {
     private int _pellets = 3; //Задаём в инспекторе сколько патронов за раз стрелять
-    public static float TimeLifeBullet = 0.5f; //Задержка
+    public static float TimeLifeBullet = 1f; //Задержка
 
     private void Update()
     {

@@ -6,9 +6,9 @@ public class Rifle : Weapon
 {
     private void Awake()
     {
-        FirePoint = GameObject.Find("FirePointRifle").transform;
+        FirePoint = transform.Find("FirePointRifle").transform;
     }
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetMouseButton(0) && Fire)
         {
