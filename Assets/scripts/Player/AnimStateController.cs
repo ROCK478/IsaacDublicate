@@ -12,13 +12,7 @@ public class AnimStateController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0)
-        {
-            animator.SetBool("isRuning", true);
-        }
-        else
-        {
-            animator.SetBool("isRuning", false);
-        }
+        bool is_running_flag = Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0;
+        animator.SetBool("isRuning", is_running_flag);
     }
 }
