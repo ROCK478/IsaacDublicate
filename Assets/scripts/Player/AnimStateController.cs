@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class AnimStateController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0)
+        {
+            animator.SetBool("isRuning", true);
+        }
+        else
+        {
+            animator.SetBool("isRuning", false);
+        }
     }
 }
