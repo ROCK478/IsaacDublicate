@@ -6,12 +6,9 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform _playerSpawn;
 	[SerializeField] private GameObject _hero;
+	[SerializeField] Transform cameraSpawn;
 
 	private Transform _camera;
-	public bool DoorRight = false;
-	public bool DoorLeft = false;
-	public bool DoorUp = false;
-	public bool DoorDown = false;
 	public bool IsOpen = true;
 	
 	public void Awake()
@@ -25,27 +22,7 @@ public class Door : MonoBehaviour
 		if (other.tag == "Player" && IsOpen)
 		{
 			other.transform.position = _playerSpawn.position; // Изменение позиции игрока, вместо клонирование экезмпляра
-			CameraMove();
+            _camera.position = cameraSpawn.position;
         }
-	}
-	
-	private void CameraMove() //Изменение положение камеры по сдвигу уровня
-	{	
-		if (DoorRight)
-		{
-			_camera.position = new Vector3(_camera.position.x + 60, _camera.position.y, _camera.position.z);
-		}
-		else if (DoorLeft)
-		{
-			_camera.position = new Vector3(_camera.position.x - 60, _camera.position.y, _camera.position.z);
-		}
-		else if (DoorUp)
-		{
-			_camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z + 32.5f);
-		}
-		else if (DoorDown)
-		{
-			_camera.position = new Vector3(_camera.position.x, _camera.position.y, _camera.position.z - 32.5f);
-		};
 	}
 }
