@@ -6,11 +6,11 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _maxHealth;
 	private float _currentHealth;
-	[SerializeField] private float _runSpeed;
-	[SerializeField] private float _bulletSpeed;
+	public bool IsDetected = false;
 	
 	private void Start()
 	{
+		_maxHealth = 100;
 		_currentHealth = _maxHealth;
 	}
 	

@@ -2,24 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour // Персонаж двигается
+public class PlayerMove : MonoBehaviour
 {
-    [SerializeField][Range(0, 100f)] private float _walkSpeed;
-	private Rigidbody _rb;
-	
-	private void Awake()
+    public float moveSpeed = 20f;
+    private Vector3 lastDirection = Vector3.zero;
+
+    private Rigidbody rb;
+
+    private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
-	
-	private void Update()
+
+    void Update()
     {
-        Walk();
+        Vector3 direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+        if (direction != Vector3.zero)
+        {
+            lastDirection = direction;
+            transform.rotation = Quaternion.LookRotation(lastDirection);
+        }
+        else
+        {
+            lastDirection = Vector3.zero;
+        }
     }
-	
-	private void Walk()
-	{
-		_rb.velocity = new Vector3(Input.GetAxis("Horizontal") * _walkSpeed, _rb.velocity.y, Input.GetAxis("Vertical") * _walkSpeed);
-	}
-	
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + lastDirection * moveSpeed * Time.fixedDeltaTime);
+    }
 }
