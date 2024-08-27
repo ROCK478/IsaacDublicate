@@ -26,6 +26,6 @@ public class PlayerMove : MonoBehaviour
         {
             lastDirection = Vector3.zero;
         }
-        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, Input.GetAxis("Vertical") * moveSpeed);
+        rb.velocity = new Vector3(Input.GetAxis("Horizontal"), rb.velocity.y, Input.GetAxis("Vertical")).normalized * moveSpeed;
     }
 }

@@ -33839,12 +33839,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5336024749430393177, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
+      propertyPath: fireDelay
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336024749430393177, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5410352450204701439, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5716688748983202102, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6151506613125956184, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_Layer
