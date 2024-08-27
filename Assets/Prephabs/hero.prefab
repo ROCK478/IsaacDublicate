@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 5063360741274126341}
   - component: {fileID: 8476778756695859530}
   - component: {fileID: 7716549661443887567}
-  - component: {fileID: 3239931410687622152}
   - component: {fileID: 8488667688072484184}
   m_Layer: 0
   m_Name: hero
@@ -426,21 +425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 20
---- !u!114 &3239931410687622152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7087577552444688564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6c306cafa079d2479e0c93426fd2976, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
 --- !u!114 &8488667688072484184
 MonoBehaviour:
   m_ObjectHideFlags: 0

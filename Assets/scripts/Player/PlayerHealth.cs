@@ -24,8 +24,16 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0) // Рестарт уровни, если здоровье игрока достигает нуля
         {
-            Debug.Log("You Lost!!");
             SceneManager.LoadScene("SampleScene");
         }
+    }
+
+    public void TakeHeal(int  heal)
+    {
+        if (currentHealth + heal > 100)
+            currentHealth = 100;
+        else
+            currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
     }
 }
