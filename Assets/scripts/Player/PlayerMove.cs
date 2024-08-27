@@ -26,10 +26,6 @@ public class PlayerMove : MonoBehaviour
         {
             lastDirection = Vector3.zero;
         }
-    }
-
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + lastDirection * moveSpeed * Time.fixedDeltaTime);
+        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, Input.GetAxis("Vertical") * moveSpeed);
     }
 }
