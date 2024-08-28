@@ -48,6 +48,7 @@ public class RangeForAttack : MonoBehaviour
             if (TimeForAttack <= 0)
             {
                 _attack = true;
+
             }
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimStateController : MonoBehaviour
 {
-    private Transform transform;
+    //private Transform transform;
     private Animator animator;
     private Vector3 lastDirection = Vector3.zero;
 

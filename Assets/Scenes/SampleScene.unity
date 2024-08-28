@@ -9306,7 +9306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1de72ed0047c0b4d8069845d7ef0b3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1de72ed0047c0b4d8069845d7ef0b3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11579,6 +11579,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
@@ -15503,6 +15507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold (2)
@@ -18194,6 +18202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold (3)
@@ -19825,7 +19837,7 @@ Transform:
   m_GameObject: {fileID: 1330727424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 176.72, y: 4.53, z: -128.92}
+  m_LocalPosition: {x: 176.59, y: 2.58, z: -124.3}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20181,6 +20193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold
@@ -20429,6 +20445,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
@@ -24173,6 +24193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold (5)
@@ -24419,6 +24443,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
@@ -27657,6 +27685,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold (2)
@@ -27916,6 +27948,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -578178860134422895, guid: 83f29df3876ec70489caad10ec764895, type: 3}
+      propertyPath: m_TagString
+      value: Level
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 83f29df3876ec70489caad10ec764895, type: 3}
       propertyPath: m_Name
       value: wall_doorway_scaffold (3)
@@ -28053,7 +28089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317184284990993086, guid: f0916e99b3a58cd458c1bd645a994642, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.69
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 7317184284990993086, guid: f0916e99b3a58cd458c1bd645a994642, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33690,6 +33726,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1182109079900627727, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1225456307244499017, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -33744,7 +33784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3792180424196050984, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.706
+      value: 1.86
       objectReference: {fileID: 0}
     - target: {fileID: 3792180424196050984, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33998,7 +34038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5983683453909588876, guid: 965bf953e7af46b4596440de15bb7fdf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0328953
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 5983683453909588876, guid: 965bf953e7af46b4596440de15bb7fdf, type: 3}
       propertyPath: m_LocalPosition.z

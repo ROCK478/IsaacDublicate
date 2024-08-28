@@ -26,7 +26,7 @@ public class Range : Enemy
             {
                 Shoot();
                 TimeForShoot = TimerDuration;
-                
+
             }
             Timer();
         }
