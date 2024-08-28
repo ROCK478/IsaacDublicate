@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4282865533275061797}
   - component: {fileID: 630439400850967308}
-  - component: {fileID: 7533922169916797890}
+  - component: {fileID: 4940050999198795486}
   m_Layer: 0
   m_Name: EnemyDetected
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.758565, y: -0.19477184, z: 7.057571}
-  m_LocalScale: {x: 27.583567, y: 0.7837666, z: 23.574236}
+  m_LocalScale: {x: 27.583567, y: 0.7837666, z: 15.405528}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5983683453909588876}
@@ -52,9 +52,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7533922169916797890
+  m_Size: {x: 1.47, y: 1, z: 1.07}
+  m_Center: {x: -0.13, y: -0.57, z: -0.38}
+--- !u!114 &4940050999198795486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,6 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8749608417408522229}
   - component: {fileID: 852891085825021133}
+  - component: {fileID: 5155739018745229454}
   m_Layer: 0
   m_Name: RangeForAttack
   m_TagString: Untagged
@@ -92,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 4167849258723033944}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62783945, y: 0, z: 0.7679803}
+  m_LocalPosition: {x: 0.13, y: 0, z: 0.7679803}
   m_LocalScale: {x: 1.7447728, y: 0.66073734, z: 1.6816982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -119,6 +120,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5155739018745229454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167849258723033944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f729f9d94d670994f9a3c5d78f3ba1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7838136885307184891}
+  TimerDuration: 2.5
 --- !u!1 &5836343576086111203
 GameObject:
   m_ObjectHideFlags: 0

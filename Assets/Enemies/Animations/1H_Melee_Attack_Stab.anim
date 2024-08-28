@@ -1381,7 +1381,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Rig/root/hips/spine/chest/head/Skeleton_Mage_Hat
+    path: Rig/root/hips/spine/chest/head/Skeleton_Warrior_Helmet
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4024,7 +4024,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -0.0002861023, y: 0.54267406, z: -0.00000013597298}
+        value: {x: 4.440892e-16, y: -0.025552869, z: -0.00000013597311}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -4033,7 +4033,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1.6
-        value: {x: -0.0002861023, y: 0.54267406, z: -0.00000013597298}
+        value: {x: 4.440892e-16, y: -0.025552869, z: -0.00000013597311}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -4043,7 +4043,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Rig/root/hips/spine/chest/head/Skeleton_Mage_Hat
+    path: Rig/root/hips/spine/chest/head/Skeleton_Warrior_Helmet
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6172,7 +6172,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Rig/root/hips/spine/chest/head/Skeleton_Mage_Hat
+    path: Rig/root/hips/spine/chest/head/Skeleton_Warrior_Helmet
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -7256,7 +7256,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1581981447
+      path: 3011832853
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -7490,7 +7490,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1581981447
+      path: 3011832853
       attribute: 2
       script: {fileID: 0}
       typeID: 4
@@ -7751,7 +7751,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1581981447
+      path: 3011832853
       attribute: 3
       script: {fileID: 0}
       typeID: 4
