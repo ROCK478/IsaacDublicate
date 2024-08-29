@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float _maxHealth;
-	private float _currentHealth;
+    private float _maxHealth;
+	[SerializeField] private float _currentHealth;
 	GameObject playerBullet;
 	public bool IsDetected = false;
 	
