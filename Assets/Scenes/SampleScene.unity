@@ -1848,6 +1848,7 @@ GameObject:
   - component: {fileID: 141599870}
   - component: {fileID: 141599869}
   - component: {fileID: 141599868}
+  - component: {fileID: 141599872}
   m_Layer: 0
   m_Name: Door-Left
   m_TagString: Level
@@ -1957,6 +1958,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141599866}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &141599872
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141599866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &152175276
 PrefabInstance:
@@ -10643,6 +10666,7 @@ GameObject:
   - component: {fileID: 741363372}
   - component: {fileID: 741363371}
   - component: {fileID: 741363370}
+  - component: {fileID: 741363374}
   m_Layer: 0
   m_Name: Door-Right
   m_TagString: Level
@@ -10752,6 +10776,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741363368}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &741363374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741363368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1 &745478138 stripped
 GameObject:
@@ -11855,6 +11901,7 @@ GameObject:
   - component: {fileID: 844550318}
   - component: {fileID: 844550317}
   - component: {fileID: 844550316}
+  - component: {fileID: 844550320}
   m_Layer: 0
   m_Name: 'Door-Right '
   m_TagString: Level
@@ -11964,6 +12011,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844550314}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &844550320
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844550314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1 &848277491 stripped
 GameObject:
@@ -15305,6 +15374,7 @@ GameObject:
   - component: {fileID: 1098723840}
   - component: {fileID: 1098723839}
   - component: {fileID: 1098723838}
+  - component: {fileID: 1098723843}
   m_Layer: 0
   m_Name: Door-Down
   m_TagString: Level
@@ -15415,6 +15485,28 @@ Transform:
   - {fileID: 811698489}
   m_Father: {fileID: 913203439}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &1098723843
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098723837}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &1103186895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17070,37 +17162,17 @@ Transform:
   - {fileID: 666378141}
   m_Father: {fileID: 2142543675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1172379892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7087577552444688564, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
-  m_PrefabInstance: {fileID: 4516608799241243398}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1172379909 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1635251409020977285, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
   m_PrefabInstance: {fileID: 4516608799241243398}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172379892}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6c306cafa079d2479e0c93426fd2976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1172379916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172379892}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef971d94f79d1b24391832a4c4add555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrf: {fileID: 2302353705468094875, guid: 08c4b0d4c1cc64049ba411381eba005c, type: 3}
-  bulletSpeed: 30
-  fireDelay: 0.5
 --- !u!1001 &1180154462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23137,6 +23209,7 @@ GameObject:
   - component: {fileID: 1537694591}
   - component: {fileID: 1537694590}
   - component: {fileID: 1537694589}
+  - component: {fileID: 1537694593}
   m_Layer: 0
   m_Name: Door-Down
   m_TagString: Level
@@ -23246,6 +23319,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537694587}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &1537694593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537694587}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &1540050577
 PrefabInstance:
@@ -25138,6 +25233,7 @@ GameObject:
   - component: {fileID: 1644647843}
   - component: {fileID: 1644647842}
   - component: {fileID: 1644647841}
+  - component: {fileID: 1644647845}
   m_Layer: 0
   m_Name: Door-Left
   m_TagString: Level
@@ -25247,6 +25343,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644647839}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &1644647845
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644647839}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &1649659133
 PrefabInstance:
@@ -26546,6 +26664,7 @@ GameObject:
   - component: {fileID: 1718288266}
   - component: {fileID: 1718288265}
   - component: {fileID: 1718288264}
+  - component: {fileID: 1718288268}
   m_Layer: 0
   m_Name: Door-Up
   m_TagString: Level
@@ -26655,6 +26774,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718288262}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &1718288268
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718288262}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &1718908337
 PrefabInstance:
@@ -30604,6 +30745,7 @@ GameObject:
   - component: {fileID: 1970442152}
   - component: {fileID: 1970442151}
   - component: {fileID: 1970442150}
+  - component: {fileID: 1970442154}
   m_Layer: 0
   m_Name: Door-Up
   m_TagString: Level
@@ -30713,6 +30855,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970442148}
+  m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
+--- !u!64 &1970442154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970442148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7430001191524928491, guid: d1c4a2e5a08a8bc4ea4f36d94007d405, type: 3}
 --- !u!1001 &1973680463
 PrefabInstance:
@@ -34136,10 +34300,7 @@ PrefabInstance:
     - {fileID: 3463869344291542388, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
     - {fileID: 6323528383425131623, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7087577552444688564, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1172379916}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c17f50a458cdf174f87c5d51cd0abf85, type: 3}
 --- !u!1001 &4791495540337715095
 PrefabInstance:
