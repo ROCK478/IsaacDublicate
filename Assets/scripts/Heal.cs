@@ -13,7 +13,8 @@ public class Heal : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             playerHealth.TakeHeal(heal);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
 }

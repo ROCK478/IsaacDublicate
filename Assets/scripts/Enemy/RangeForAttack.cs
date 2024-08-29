@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RangeForAttack : MonoBehaviour
 {
+    public Animator animator;
     private GameObject _hero;
     private bool _inRange = false;
     [NonSerialized] private bool _attack  = true;
@@ -19,6 +20,7 @@ public class RangeForAttack : MonoBehaviour
     {
         if (_inRange && _attack)
         {
+            animator.SetTrigger("isAttack");
             _hero.GetComponent<PlayerHealth>().TakeDamage(transform.parent.gameObject.GetComponent<Melee>()._damage);
             TimeForAttack = TimerDuration;
         }
@@ -48,6 +50,7 @@ public class RangeForAttack : MonoBehaviour
             if (TimeForAttack <= 0)
             {
                 _attack = true;
+
             }
         }
     }

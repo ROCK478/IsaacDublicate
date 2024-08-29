@@ -15,7 +15,7 @@ public class EnemyDetected : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			transform.parent.gameObject.GetComponent<Enemy>().IsDetected = true;
+            transform.parent.gameObject.GetComponent<Enemy>().IsDetected = true;
 		}
 	}
 }
