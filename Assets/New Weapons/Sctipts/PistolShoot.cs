@@ -15,7 +15,7 @@ public class PistolShoot : MonoBehaviour
         float shootHor = Input.GetAxis("ShootHorizontal");
         float shootVer = Input.GetAxis("ShootVertical");
 
-        if ((shootHor != 0 || shootVer != 0) && Time.time > lastFire + fireDelay)
+        if (((shootHor != 0 || shootVer != 0) && Time.time > lastFire + fireDelay) & gameObject.GetComponent<WeaponHold>().hold)
         {
             Shooting(shootHor, shootVer);
             lastFire = Time.time;   
